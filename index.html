@@ -22,7 +22,7 @@
                     <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Triangle</h2>
-                      <p>Area (A) = 0.5 X b X h</p>
+                      <p>Area (A) = 0.5 x b x h</p>
                       <p>
                         <input type="text" class="border text-xl w-20 px-2 bg-gray-300" placeholder="b" id="triangle-base">
                         <span class="ml-1">CM</span>
@@ -40,7 +40,7 @@
                     <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Rectangle</h2>
-                      <p>Area (A) = W X L</p>
+                      <p>Area (A) = W x L</p>
                       <p>
                         <input type="text" class="border text-xl w-20 px-2 bg-gray-300" placeholder="W" id="rectangle-width">
                         <span class="ml-1">CM</span>
@@ -58,7 +58,7 @@
                     <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Parallelogram</h2>
-                      <p>Area (A) = b X h</p>
+                      <p>Area (A) = b x h</p>
                       <p>
                         <input type="text" class="border text-xl w-20 px-2 bg-gray-300" placeholder="b" id="Parallelogram-base">
                         <span class="ml-1">CM</span>
@@ -76,7 +76,7 @@
                     <figure><img src="./images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Rhombus</h2>
-                      <p>Area (A) = 0.5 X b1 X b2</p>
+                      <p>Area (A) = 0.5 x b1 x b2</p>
                       <p>
                         <input type="text" class="border text-xl w-20 px-2 bg-gray-300" placeholder="b" id="Rhombus-bone">
                         <span class="ml-1">CM</span>
@@ -86,6 +86,42 @@
                       <p>Area: <span id="Rhombus-area" class="font-bold">0</span> cm <sup>2</sup></p>
                       <div>
                         <button class="btn btn-primary w-full" onclick="calculateRhombusArea()">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pentagon-card -->
+                  <div class="card card-compact bg-base-100 shadow-xl">
+                    <figure><img src="./images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Pentagon</h2>
+                      <p>Area (A) =  0.5 x p x b</p>
+                      <p>
+                        <input type="text" class="border text-xl w-20 px-2 bg-gray-300" placeholder="b" id="Pentagon-p">
+                        <span class="ml-1">CM</span>
+                        <input type="text" class="border text-xl w-20 px-2 bg-gray-300 ml-2" placeholder="h" id="Pentagon-base">
+                        <span class="ml-1">CM</span>  
+                      </p>
+                      <p>Area: <span id="Pentagon-area" class="font-bold">0</span> cm <sup>2</sup></p>
+                      <div>
+                        <button class="btn btn-primary w-full" onclick="calculatePentagonArea()">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pentagon-card -->
+                  <div class="card card-compact bg-base-100 shadow-xl">
+                    <figure><img src="./images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Ellipse</h2>
+                      <p>Area (A) = πab</p>
+                      <p>
+                        <input type="text" class="border text-xl w-20 px-2 bg-gray-300" placeholder="b" id="Ellipse-a">
+                        <span class="ml-1">CM</span>
+                        <input type="text" class="border text-xl w-20 px-2 bg-gray-300 ml-2" placeholder="h" id="Ellipse-b">
+                        <span class="ml-1">CM</span>  
+                      </p>
+                      <p>Area: <span id="Ellipse-area" class="font-bold">0</span> cm <sup>2</sup></p>
+                      <div>
+                        <button class="btn btn-primary w-full" onclick="calculateEllipseArea()">Calculate</button>
                       </div>
                     </div>
                   </div>

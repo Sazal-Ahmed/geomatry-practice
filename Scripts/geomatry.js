@@ -57,6 +57,20 @@ function calculateRhombusArea(){
     const area = 0.5 * d1 * d2;
     setFieldText('Rhombus-area', area);
 }
+// Pentagon Area
+function calculatePentagonArea(){
+    const p = getInputValue('Pentagon-p');
+    const b = getInputValue('Pentagon-base');
+    const area = 0.5 * p * b;
+    setFieldText('Pentagon-area', area);
+}
+// eEllipse Area
+function calculateEllipseArea(){
+    const a = getInputValue('Ellipse-a');
+    const b = getInputValue('Ellipse-b');
+    const area = 3.14 * a * b;
+    setFieldText('Ellipse-area', area);
+}
 
 //reusable function
 function getInputValue(inputId){
@@ -64,9 +78,10 @@ function getInputValue(inputId){
     const inputFieldValueString = inputField .value;
     const Value = parseFloat(inputFieldValueString);
     inputField.value = '';
-    return Value;
-    
+    return Value;   
 }
+
+
 function setFieldText(elementId, area){
     const element = document.getElementById(elementId);
     element.innerText = area;
